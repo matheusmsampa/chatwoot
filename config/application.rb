@@ -53,10 +53,6 @@ module Chatwoot
     # FIX ME : fixes breakage of installation config. we need to migrate.
     config.active_record.yaml_column_permitted_classes = [ActiveSupport::HashWithIndifferentAccess]
 
-    # Adiciona cabeçalho para permitir iframes
-    config.action_dispatch.default_headers = {
-      'X-Frame-Options' => 'ALLOWALL'
-    }
   end
 
   def self.config
